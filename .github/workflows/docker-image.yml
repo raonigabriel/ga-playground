@@ -19,7 +19,4 @@ jobs:
               git --version
               docker --version
               docker ps
-              ls -la /home/runner
-              ls -la /home/runner/work
-              ls -la /github/workflow
-              ls -la /github/home
+              ls -la
