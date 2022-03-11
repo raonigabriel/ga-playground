@@ -12,8 +12,14 @@ jobs:
       image: docker://ghcr.io/raonigabriel/builder-java:latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Run Commands
         run: |
               git --version
               docker --version
               docker ps
+              ls -la /home/runner
+              ls -la /home/runner/work
+              ls -la /github/workflow
+              ls -la /github/home
