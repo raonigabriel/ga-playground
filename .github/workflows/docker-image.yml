@@ -15,6 +15,6 @@ jobs:
       - name: Run Commands
         run: |
               apk add git docker-cli
-              git -- version
+              git --version
               docker --version
               docker ps
