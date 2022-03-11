@@ -1,0 +1,23 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+    container:
+      image: docker://library/alpine:latest
+
+    steps:
+      - name: Run Commands
+        run: |
+              apk add git docker-cli
+              git -- version
+              docker --version
+              docker ps
