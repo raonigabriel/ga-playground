@@ -9,12 +9,11 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: docker://library/alpine:latest
+      image: docker://ghcr.io/raonigabriel/builder-java:latest
 
     steps:
       - name: Run Commands
         run: |
-              apk add git docker-cli
               git --version
               docker --version
               docker ps
