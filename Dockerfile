@@ -1,4 +1,4 @@
-FROM alpine:3.15.4
+FROM alpine:3.16.0
 
 # Installs shell related tools
 RUN apk --no-cache add sudo shadow bash \
