@@ -1,7 +1,7 @@
-FROM alpine:3.16.0 AS linux-amd64
+FROM alpine:3.16.1 AS linux-amd64
 ARG HADOLINT=hadolint-Linux-x86_64
 
-FROM alpine:3.16.0 AS linux-arm64
+FROM alpine:3.16.1 AS linux-arm64
 ARG HADOLINT=hadolint-Linux-arm64
 
 FROM ${TARGETOS}-${TARGETARCH} AS final
