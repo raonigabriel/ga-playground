@@ -3,8 +3,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  refresh-certificate:
     runs-on: ubuntu-20.04
     steps:
     - name: 'Install tools'
-      run: pip install certbot-dns-cloudflare
+      run: sudo apt install -y certbot openssl python3-certbot-dns-cloudflare
+    - name: 'Run Certbot'
+      run: certbot --version
