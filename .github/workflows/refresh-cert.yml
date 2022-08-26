@@ -4,9 +4,9 @@ on:
 
 jobs:
   refresh-certificate:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
     - name: 'Install tools'
-      run: sudo apt install -y certbot openssl python3-certbot-dns-cloudflare
+      run: pip install certbot-dns-cloudflare
     - name: 'Run Certbot'
       run: certbot --version
