@@ -1,0 +1,10 @@
+name: 'Refresh Certificate'
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: 'Install tools'
+      run: pip install certbot-dns-cloudflare
