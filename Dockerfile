@@ -2,4 +2,4 @@ FROM alpine:latest
 
 RUN uname -m && \
     env && \
-    apk --nocache add git curl docker-cli
+    apk --no-cache add git curl docker-cli
