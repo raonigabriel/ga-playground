@@ -9,6 +9,6 @@ RUN wget https://az764295.vo.msecnd.net/stable/784b0177c56c607789f9638da7b6bf323
 
 RUN tar -xf vscode-server-linux-${ARCH}-web.tar.gz
 
-RUN  vscode-server-linux-${ARCH}-web.tar.gz
+RUN rm vscode-server-linux-${ARCH}-web.tar.gz
 
 RUN mv vscode-server-linux-${ARCH}-web /opt/vscode-server
